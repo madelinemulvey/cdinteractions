@@ -1,0 +1,83 @@
+{
+
+      }
+
+h1 {
+text-align: center;
+  font-size: 64px;
+  font-weight: 500;
+  color:   #ff4d5c;
+  border-style: dotted;
+  font-family: 'Gaegu', cursive;
+
+}
+p {
+  font-size: 50px;
+  font-weight: 100;
+  font-family: 'Gaegu', cursive;
+
+}
+h2 {
+  margin: auto;
+  max-width: 800px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #ff4d5c;
+  border-style: solid;
+font-family: 'Gaegu', cursive;
+
+}
+
+body {
+  background-color: #ffeaf0;
+
+}
+ul {
+  color: #e9f2d8;
+  font-family: 'Gaegu', cursive;
+}
+
+  div.A {
+  text-align: center;
+  max-width: 800px;
+  background-color: green;
+  color: #black;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  div.B {
+    text-align: center;
+    max-width: 800px;
+    color: #ff4d5c;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    div.C {
+      text-align: center;
+      max-width: 800px;
+      color: #ff4d5c;
+      background-color: blue;
+      margin-left: auto;
+      margin-right: auto;
+      }
+
+      div.D {
+        text-align: center;
+        max-width: 800px;
+        color: white;
+        background-color: purple;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        div.E {
+          text-align: center;
+          max-width: 800px;
+          color: #ff4d5c;
+          background-color: pink;
+          margin-left: auto;
+          margin-right: auto;
+          }
