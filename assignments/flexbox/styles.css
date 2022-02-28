@@ -6,5 +6,18 @@
 
   div.row {
     display: flex;
+    justify-content: space-around;
+    background-color: #5995DA;
+    border: 5px solid white;
+    font-size: 72px;
+    color: #FF0067;
+
+
+
   }
+  div {
+      width: 100%;
+  }
+    div.space {
+
 }
