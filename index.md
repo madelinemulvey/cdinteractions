@@ -1,5 +1,5 @@
 ## Assignments
 
-- [Recipe](./ASSIGNMENTS/recipe.md)
-- [Recipe Style](./ASSIGNMENTS/recipe-style.md)
-- [Poems](./ASSIGNMENTS/madelinespoems.md)
+- [Recipe](./assignments/recipe.md)
+- [Recipe Style](./assignments/style-recipe.md)
+- [Poems](./assignments/poems.md)
