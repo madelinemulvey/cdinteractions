@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+   --pink: #ff002b;
+   --backround: #1b0717;
+}
+
+body {
+  color: var(--pink);
+  background: var(--backround);
+}
+.box {
+  max-width: 500px;
+  margin: auto;
+  background: #392b3c;
+  padding: 100px;
+
+
+}
