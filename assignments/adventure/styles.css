@@ -5,18 +5,52 @@
 }
 :root {
    --pink: #ff002b;
-   --backround: #1b0717;
+   --backround: #392b3c;
 }
 
 body {
   color: var(--pink);
   background: var(--backround);
+  text-align: justify;
 }
-.box {
-  max-width: 500px;
-  margin: auto;
-  background: #392b3c;
-  padding: 100px;
 
+.box {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  column-gap: 2;
+  line-height: 1.4rem;
+
+}
+p {
+margin-bottom: 1rem;
+}
+
+.content {
+}
+
+.row {background: #392b3c;
+}
+
+#footer {
+  background: #110513;
+  padding: 20px;
+}
+#header {
+  background: #110513;
+  padding: 20px;
+}
+.hero-image {
+  background-image: url("flower.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#photo {
+  font-size:100px;
+}
 
 }
