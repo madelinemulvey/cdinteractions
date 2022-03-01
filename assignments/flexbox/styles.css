@@ -6,18 +6,24 @@
 
   div.row {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #5995DA;
-    border: 5px solid white;
-    font-size: 72px;
+    border: 10px solid white;
+    font-size: 62px;
     color: #FF0067;
+    font-family: 'Orbitron', sans-serif;
 
 
 
   }
   div {
       width: 100%;
+      font-family: 'Orbitron', sans-serif;
   }
     div.space {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 62px;
+      border: 10px solid white;
+      
 
 }
