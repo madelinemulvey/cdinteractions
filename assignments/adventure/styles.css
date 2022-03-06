@@ -12,14 +12,16 @@ body {
   color: var(--pink);
   background: var(--backround);
   text-align: justify;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .box {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   padding: 2rem;
   column-gap: 2;
-  line-height: 1.4rem;
+  line-height: 3rem;
+  font-size: 20px;
 
 }
 p {
@@ -42,8 +44,8 @@ margin-bottom: 1rem;
 }
 .hero-image {
   background-image: url("flower.jpeg");
-  height: 100%;
   background-position: center;
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -51,6 +53,13 @@ margin-bottom: 1rem;
 
 #photo {
   font-size:100px;
+  color: white;
 }
+#headerfooter {
+  font-size: 70px;
+}
+#question {
+  font-size: 50px;
+
 
 }
