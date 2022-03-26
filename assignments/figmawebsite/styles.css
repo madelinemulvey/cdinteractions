@@ -10,6 +10,7 @@
 h1 {
   font-size: 50px;
   text-align: center;
+
 }
 
 #V {
@@ -83,10 +84,9 @@ margin-bottom: 1rem;
 #footer {
   background: #110513;
   padding: 20px;
+  
 }
-#header {
 
-}
 body {
   background-image: url("backround.jpeg");
 }
@@ -104,6 +104,28 @@ body {
 #photo {
   font-size:100px;
   color: white;
+}
+#header {
+  padding: 20px;
+  animation-name: float;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: perspective()(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: perspective()(-100px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: perspective()(100px);
+
 }
 
 
