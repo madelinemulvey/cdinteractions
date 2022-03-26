@@ -8,8 +8,14 @@
  }
 
 h1 {
-  font-size: 32px;
+  font-size: 50px;
   text-align: center;
+}
+
+#V {
+  font-size: 25px;
+  text-align: center;
+
 }
 body {
   color: var(--pink);
@@ -31,21 +37,38 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
-  max-width: 1000px;
-  border-radius: 6px;
-  margin-bottom: 6px;
+  max-width: 500px;
+  border-radius: 400px;
+  margin-bottom: 100px;
+  margin-top: 6px;
+
 }
 
 .box1 {
-  min-height: 48px; /*this is here to make the page look less crowded*/
-  padding: 6px;
-  margin: 6px;
+  min-height: 70px;
+  min-width: 200px;/*this is here to make the page look less crowded*/
+  padding: 21px;
+  margin: 30px;
+  text-align: center;
+  font-size: 12px;
 
 }
 
 .color01 {
-background-color: blue;
+border-style: solid;
+border-color: : white;
 }
+
+.color {
+border-style: solid;
+border-color: : white;
+}
+
+.color02 {
+border-style: solid;
+border-color: : white;
+}
+
 
 
 p {
@@ -67,24 +90,23 @@ margin-bottom: 1rem;
 body {
   background-image: url("backround.jpeg");
 }
-.hero-image {
-  background-image: url("candy2.jpeg");
-  background-position: center;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+
+#portfolio {
+  margin-top: 100px;
+
+}
+
+#work {
+  margin-top: 10px;
+
 }
 
 #photo {
   font-size:100px;
   color: white;
 }
-#headerfooter {
-  font-size: 70px;
-}
-#question {
-  font-size: 50px;
+
+
 
 
 }
