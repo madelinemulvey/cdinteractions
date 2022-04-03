@@ -7,3 +7,8 @@ document.getElementById("myButton").onclick = function() {
     document.getElementById("story").style.display = "block";
 document.getElementById("questions").style.display = "none";
 }
+document.getElementById("myButton2").onclick = function() {
+  document.getElementById("word06").innerHTML = document.getElementById("field06").value;
+    document.getElementById("story2").style.display = "block";
+document.getElementById("questions2").style.display = "none";
+}
