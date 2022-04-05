@@ -1,17 +1,17 @@
 [
     {
         "id": "1",
-        "photo": "John",
-        "catname": "Doe"
+        "filename": "cat1.png",
+        "catname": "Persian Cat"
     },
     {
         "id": "2",
-        "photo": "Mary",
-        "catname": "Peterson"
+        "filename": "cat2.jpeg",
+        "catname": "Maine Coon Cat"
     },
     {
         "id": "3",
-        "photo": "George",
-        "catname": "Hansen"
+        "filename": "cat3.jpeg",
+        "catname": "Bengal Cat"
     }
 ]
