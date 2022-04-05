@@ -17,16 +17,16 @@
     {
         "id": "4",
         "filename": "cat4.jpg",
-        "catname": "Bengal Cat"
+        "catname": "Siamese Cat"
     },
     {
         "id": "5",
         "filename": "cat5.jpg",
-        "catname": "Bengal Cat"
+        "catname": "Scottish Fold Cat"
     },
     {
         "id": "3",
         "filename": "cat6.jpg",
-        "catname": "Bengal Cat"
+        "catname": "Ragdoll Cat"
     }
 ]
