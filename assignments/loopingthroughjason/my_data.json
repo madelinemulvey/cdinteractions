@@ -25,8 +25,23 @@
         "catname": "Scottish Fold Cat"
     },
     {
-        "id": "3",
+        "id": "6",
         "filename": "cat6.jpg",
         "catname": "Ragdoll Cat"
+    },
+    {
+        "id": "7",
+        "filename": "cat7.jpg",
+        "catname": "Savannah Cat"
+    },
+    {
+        "id": "8",
+        "filename": "cat8.jpg",
+        "catname": "Sphynx Cat"
+    },
+    {
+        "id": "9",
+        "filename": "cat9.jpg",
+        "catname": "Russian Blue Cat"
     }
 ]
