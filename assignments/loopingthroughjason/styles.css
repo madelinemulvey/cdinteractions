@@ -1,13 +1,48 @@
 body {
   margin: auto;
-  max-width: 800px;
+  max-width: 790px;
+}
+
+h1 {
+text-align: center;
+font-size: 40px;
+font-style: italic;
+font-family: 'Orbitron', sans-serif;
+
+}
+
+.gallerydiv {
+    width: 30%;
+
+
 }
 
 .galleryphoto {
   width: 100%;
-  font-size: 100px;
+
 }
 
 .caption {
-font-size: 50px;
+font-size: 15px;
+margin: auto;
+text-align: center;
+font-family: 'Orbitron', sans-serif;
+color: white;
+
 }
+
+#data_holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: black;
+    padding: 38px;
+
+
+
+}
+
+
+  }
