@@ -13,5 +13,20 @@
         "id": "3",
         "filename": "cat3.jpeg",
         "catname": "Bengal Cat"
+    },
+    {
+        "id": "4",
+        "filename": "cat4.jpg",
+        "catname": "Bengal Cat"
+    },
+    {
+        "id": "5",
+        "filename": "cat5.jpg",
+        "catname": "Bengal Cat"
+    },
+    {
+        "id": "3",
+        "filename": "cat6.jpg",
+        "catname": "Bengal Cat"
     }
 ]
