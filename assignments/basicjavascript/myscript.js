@@ -40,3 +40,12 @@ for ( var n = 20; n > 0; n = n - 1 ) {
       console.log(n + " is even. ");
   }
 };
+
+let str1 = "javascript";
+console.log(str1);
+for (p = 0; p < str1.length; p++){
+  
+}
+// Example output:
+// jZvZsZrZpZ OR each letter on a new line
+// HINT: You can use  if((i+1) % 2 == 0) to check for even
