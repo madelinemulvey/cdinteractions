@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+}
+
+html {
+  background-color: lightgray;
+}
+body {
+  background-color: white;
+  max-width: 1000px;
+
+}
+img {
+  max-width: 100px;
+}
