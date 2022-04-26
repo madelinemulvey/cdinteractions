@@ -42,10 +42,17 @@ for ( var n = 20; n > 0; n = n - 1 ) {
 };
 
 let str1 = "javascript";
+var str2 = "";
 console.log(str1);
+console.log(str1.length);
 for (p = 0; p < str1.length; p++){
-  
+  if (p%2==0){
+  str2 += "Z";
+} else {
+   str2 += str1[p];
+ }
 }
+console.log(str2);
 // Example output:
 // jZvZsZrZpZ OR each letter on a new line
 // HINT: You can use  if((i+1) % 2 == 0) to check for even
