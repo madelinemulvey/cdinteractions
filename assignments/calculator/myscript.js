@@ -1,59 +1,127 @@
-function fredfunction() { // create a function.
-    console.log('fredfunction has run');
+class Calculator {
+  constructor(previousOperandTextElement, currentOperandTextElement) {
+    this.previousOperandTextElement = previousOperandTextElement
+    this.currentOperandTextElement = currentOperandTextElement
+    this.clear()
+  }
+
+  clear() {
+    this.currentOperand = ''
+    this.previousOperand = ''
+    this.operation = undefined
+  }
+
+  delete() {
+    this.currentOperand = this.currentOperand.toString().slice(0, -1)
+  }
+
+  appendNumber(number) {
+    if (number === '.' && this.currentOperand.includes('.')) return
+    this.currentOperand = this.currentOperand.toString() + number.toString()
+  }
+
+  chooseOperation(operation) {
+    if (this.currentOperand === '') return
+    if (this.previousOperand !== '') {
+      this.compute()
+    }
+    this.operation = operation
+    this.previousOperand = this.currentOperand
+    this.currentOperand = ''
+  }
+
+  compute() {
+    let computation
+    const prev = parseFloat(this.previousOperand)
+    const current = parseFloat(this.currentOperand)
+    if (isNaN(prev) || isNaN(current)) return
+    switch (this.operation) {
+      case '+':
+        computation = prev + current
+        break
+      case '-':
+        computation = prev - current
+        break
+      case '*':
+        computation = prev * current
+        break
+      case '÷':
+        computation = prev / current
+        break
+      default:
+        return
+    }
+    this.currentOperand = computation
+    this.operation = undefined
+    this.previousOperand = ''
+  }
+
+  getDisplayNumber(number) {
+    const stringNumber = number.toString()
+    const integerDigits = parseFloat(stringNumber.split('.')[0])
+    const decimalDigits = stringNumber.split('.')[1]
+    let integerDisplay
+    if (isNaN(integerDigits)) {
+      integerDisplay = ''
+    } else {
+      integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
+    }
+    if (decimalDigits != null) {
+      return `${integerDisplay}.${decimalDigits}`
+    } else {
+      return integerDisplay
+    }
+  }
+
+  updateDisplay() {
+    this.currentOperandTextElement.innerText =
+      this.getDisplayNumber(this.currentOperand)
+    if (this.operation != null) {
+      this.previousOperandTextElement.innerText =
+        `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
+    } else {
+      this.previousOperandTextElement.innerText = ''
+    }
+  }
 }
 
-fredfunction(); // call the function.
 
-function maryfun() { // create a function that changes x.
-  x = x + 1;
-}
-maryfun();
 
-var x = 42; // create a variable.
+const numberButtons = document.querySelectorAll('[data-number]')
+const operationButtons = document.querySelectorAll('[data-operation]')
+const equalsButton = document.querySelector('[data-equals]')
+const deleteButton = document.querySelector('[data-delete]')
+const allClearButton = document.querySelector('[data-all-clear]')
+const previousOperandTextElement = document.querySelector('[data-previous-operand]')
+const currentOperandTextElement = document.querySelector('[data-current-operand]')
 
-console.log( "x = " + x ); // print the variable.
+const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
 
-maryfun(); // call a function.
+numberButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    calculator.appendNumber(button.innerText)
+    calculator.updateDisplay()
+  })
+})
 
-console.log( "x = " + x ); // print the value of x.
+operationButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    calculator.chooseOperation(button.innerText)
+    calculator.updateDisplay()
+  })
+})
 
-function philfun(n) { // create a function.
-  console.log("n = " + n);
-}
+equalsButton.addEventListener('click', button => {
+  calculator.compute()
+  calculator.updateDisplay()
+})
 
-philfun(x); // call a function and send it the value of x.
+allClearButton.addEventListener('click', button => {
+  calculator.clear()
+  calculator.updateDisplay()
+})
 
-// console.log("n = " + n); // print the value of n. Fails because n is out of scope.
-
-function sumfun(y) { // a function that multiplies a value by 7.
-  y = y * 7;
-  return y // and returns it.
-}
-
-var i = sumfun(x); // create a var with the value of whatever comes back when you send sumfun the value of x.
-
-console.log('i = ' + i);
-
-console.log("sumfun(x) returns " + sumfun(x)); // we can use the function call directly.
-
-document.getElementById("my_div").innerHTML = sumfun(x); // We can set a div to contain the result of a function.
-
-function addFunc(a,b) { // This function takes two arguments, adds them together and puts them into c.
-  var c = a + b;
-  return c;
-}
-
-console.log(addFunc(6,12)); // Test the addFunc
-
-// Lets hook it into the html. This sends the values in the fields when you press the test button.
-document.getElementById("testButton").onclick = function() {
-  x = document.getElementById("field01").value;
-  y = document.getElementById("field02").value;
-  console.log(addFunc(x,y)); // Comes out wrong because the javascript thinks the fields give strings not numbers.
-}
-
-document.getElementById("addButton").onclick = function() { // Here it is again but the javascript changes the strings to numbers.
-  x = parseInt(document.getElementById("field01").value);
-  y = parseInt(document.getElementById("field02").value);
-  document.getElementById("my_div").innerHTML = addFunc(x,y);
-}
+deleteButton.addEventListener('click', button => {
+  calculator.delete()
+  calculator.updateDisplay()
+})
