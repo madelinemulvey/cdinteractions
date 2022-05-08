@@ -1,0 +1,78 @@
+
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+padding: 1em;
+margin: 0 10%;
+background: linear-gradient(to right,  #f8006b
+, #abf800);
+
+}
+
+h1{
+ text-align: center;
+ font-size: 40px;
+ font-family: 'Italiana', serif;
+ color: white;
+
+
+}
+
+
+.heading {
+
+   float: left;
+   display: inline;
+
+
+}
+nav{
+  float: right;
+  display: flex;
+  padding: 0;
+  margin-right: 10px;
+  overflow: hidden;
+  margin: 26px;
+  font-family: 'Italiana', serif;
+}
+
+
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+main{
+margin-top: 160px;
+
+
+
+}
+
+article {
+text-align: left;
+font-size: 20px;
+
+}
