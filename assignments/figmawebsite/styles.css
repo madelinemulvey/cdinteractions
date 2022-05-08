@@ -10,7 +10,11 @@
 h1 {
   font-size: 50px;
   text-align: center;
+font-family: 'Orbitron', sans-serif;
+}
+h2 {
 
+font-family: 'Italiana', serif;
 }
 
 #V {
@@ -22,7 +26,7 @@ body {
   color: var(--pink);
   background: var(--backround);
   text-align: justify;
-  font-family: 'Orbitron', sans-serif;
+
 }
 
 .box {
@@ -42,19 +46,29 @@ body {
   border-radius: 400px;
   margin-bottom: 100px;
   margin-top: 6px;
+  font-family: 'Orbitron', sans-serif;
 
 }
 
 .box1 {
   min-height: 70px;
-  min-width: 200px;/*this is here to make the page look less crowded*/
-  padding: 21px;
+  min-width: 241px;/*this is here to make the page look less crowded*/
+  padding: 6%;
   margin: 30px;
   text-align: center;
   font-size: 12px;
 
 }
-
+.button {
+ background-color: #4CAF50; /* Green */
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+}
 .color01 {
 border-style: solid;
 border-color: : white;
@@ -74,6 +88,8 @@ border-color: : white;
 
 p {
 margin-bottom: 1rem;
+font-family: 'Italiana', serif;
+
 }
 
 .content {
@@ -127,6 +143,7 @@ body {
     transform: perspective()(100px);
 
 }
+
 
 
 
