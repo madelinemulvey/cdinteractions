@@ -54,7 +54,7 @@ nav{
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #9E2B5F;
   color: white;
 }
 
@@ -87,6 +87,15 @@ p2 {
   }
 
 
+  .contact {
+  float: left;
+  color: white;
+  width: 800px; /* width of container */
+  height: 415px;
+  margin-top: -6px;
+  }
+
+
 
 
 .image1 {
@@ -106,6 +115,13 @@ p2 {
 
 footer {
   display: block;
+}
+
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+
 }
 
 
