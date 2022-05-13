@@ -22,14 +22,13 @@ h1{
 
 }
 
-
 .heading {
-
    float: left;
    display: inline;
 
 
 }
+
 nav{
   float: right;
   display: flex;
@@ -39,8 +38,6 @@ nav{
   margin: 26px;
   font-family: 'Italiana', serif;
 }
-
-
 
 
 .topnav a {
@@ -74,4 +71,22 @@ margin-top: 160px;
 p {
 text-align: left;
 font-size: 35px;
+color: white;
+}
+
+
+.image1 {
+    width: 910px; /* width of container */
+    height: 302px; /* height of container */
+    overflow: hidden;
+    border: 5px solid black;
+    margin: auto;
+
+}
+
+.image img {
+  height: 100%;
+
+
+
 }
