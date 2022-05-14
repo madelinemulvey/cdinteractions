@@ -123,6 +123,26 @@ button {
   background-color: #4CAF50; /* Green */
 
 }
+h2{
+ text-align: left;
+ font-size: 25px;
+ font-family: 'Italiana', serif;
+ color: #9E2B5F;
+
+
+}
+.socials {
+  width: 100px; /* width of container */
+  height: 30px; /* height of container */
+  overflow: hidden;
+  border: 3px solid black;
+  margin: 0px;
+}
+
+.socials img{
+  height: 100%;
+
+}
 
 
 
