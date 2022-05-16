@@ -1,4 +1,5 @@
 
+(function () {
 
   const buttons = document.querySelectorALL('.btn')
   const storeImages = document.querySelectorALL('.store-item')
@@ -20,6 +21,7 @@
            }
 
           }
+
 
       })
     })
