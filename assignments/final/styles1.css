@@ -89,7 +89,7 @@ p2 {
 
 
   .contact {
-  float: left;
+
   color: white;
   width: 800px; /* width of container */
   height: 415px;
@@ -116,9 +116,21 @@ p2 {
 
 footer {
   display: block;
-}
+  padding: 10px;
+  font-family: 'Italiana', serif;
 
 }
+
+footer a {
+color: white;
+
+}
+footer a:hover {
+  color: #9E2B5F;
+  text-decoration: none;
+}
+
+
 
 button {
   background-color: #4CAF50; /* Green */
@@ -172,7 +184,7 @@ h3 {
  font-size: 1.1rem;
  text-decoration: none;
  margin: 0 1.5rem;
- background-color: #9E2B5F;
+ background-color: black;
  color: white;
  padding: 8px 22px;
 
